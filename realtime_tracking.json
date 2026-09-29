@@ -1,0 +1,100 @@
+{
+  "realtime_train_tracking": [
+    {
+      "tracking_id": "TRK_LIVE_20912",
+      "train_number": "20912",
+      "current_section_id": "SEC_NGP_WR_UP",
+      "current_km_location": 808.293,
+      "current_speed_kmph": 66,
+      "delay_minutes": 0,
+      "running_status": "RUNNING_ON_TIME",
+      "occupancy_block_section": "BLK_SEC_NGP_WR_UP_808",
+      "next_signal_aspect": "YELLOW",
+      "last_gps_telemetry_timestamp": "2026-09-12 22:25:51"
+    },
+    {
+      "tracking_id": "TRK_LIVE_12105",
+      "train_number": "12105",
+      "current_section_id": "SEC_NGP_WR_UP",
+      "current_km_location": 841.367,
+      "current_speed_kmph": 94,
+      "delay_minutes": 19,
+      "running_status": "RUNNING_ON_TIME",
+      "occupancy_block_section": "BLK_SEC_NGP_WR_UP_841",
+      "next_signal_aspect": "GREEN",
+      "last_gps_telemetry_timestamp": "2026-09-12 22:25:51"
+    },
+    {
+      "tracking_id": "TRK_LIVE_12833",
+      "train_number": "12833",
+      "current_section_id": "SEC_NGP_WR_UP",
+      "current_km_location": 834.196,
+      "current_speed_kmph": 0,
+      "delay_minutes": 8,
+      "running_status": "DETAINED_AT_SIGNAL",
+      "occupancy_block_section": "BLK_SEC_NGP_WR_UP_834",
+      "next_signal_aspect": "RED",
+      "last_gps_telemetry_timestamp": "2026-09-12 22:25:51"
+    },
+    {
+      "tracking_id": "TRK_LIVE_12656",
+      "train_number": "12656",
+      "current_section_id": "SEC_NGP_WR_UP",
+      "current_km_location": 851.58,
+      "current_speed_kmph": 76,
+      "delay_minutes": 4,
+      "running_status": "RUNNING_ON_TIME",
+      "occupancy_block_section": "BLK_SEC_NGP_WR_UP_851",
+      "next_signal_aspect": "YELLOW",
+      "last_gps_telemetry_timestamp": "2026-09-12 22:25:51"
+    },
+    {
+      "tracking_id": "TRK_LIVE_18030",
+      "train_number": "18030",
+      "current_section_id": "SEC_NGP_WR_DN",
+      "current_km_location": 795.663,
+      "current_speed_kmph": 63,
+      "delay_minutes": 16,
+      "running_status": "REGULATED_AT_STATION",
+      "occupancy_block_section": "BLK_SEC_NGP_WR_DN_795",
+      "next_signal_aspect": "YELLOW",
+      "last_gps_telemetry_timestamp": "2026-09-12 22:25:51"
+    },
+    {
+      "tracking_id": "TRK_LIVE_01124",
+      "train_number": "01124",
+      "current_section_id": "SEC_NGP_WR_UP",
+      "current_km_location": 803.59,
+      "current_speed_kmph": 72,
+      "delay_minutes": 15,
+      "running_status": "RUNNING_ON_TIME",
+      "occupancy_block_section": "BLK_SEC_NGP_WR_UP_803",
+      "next_signal_aspect": "DOUBLE_YELLOW",
+      "last_gps_telemetry_timestamp": "2026-09-12 22:25:51"
+    },
+    {
+      "tracking_id": "TRK_LIVE_GOODS_CONT_901",
+      "train_number": "GOODS_CONT_901",
+      "current_section_id": "SEC_NGP_WR_UP",
+      "current_km_location": 797.602,
+      "current_speed_kmph": 0,
+      "delay_minutes": 4,
+      "running_status": "DETAINED_AT_SIGNAL",
+      "occupancy_block_section": "BLK_SEC_NGP_WR_UP_797",
+      "next_signal_aspect": "RED",
+      "last_gps_telemetry_timestamp": "2026-09-12 22:25:51"
+    },
+    {
+      "tracking_id": "TRK_LIVE_GOODS_COAL_405",
+      "train_number": "GOODS_COAL_405",
+      "current_section_id": "SEC_NGP_WR_UP",
+      "current_km_location": 833.346,
+      "current_speed_kmph": 56,
+      "delay_minutes": 5,
+      "running_status": "RUNNING_ON_TIME",
+      "occupancy_block_section": "BLK_SEC_NGP_WR_UP_833",
+      "next_signal_aspect": "GREEN",
+      "last_gps_telemetry_timestamp": "2026-09-12 22:25:51"
+    }
+  ]
+}

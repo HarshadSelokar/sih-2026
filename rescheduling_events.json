@@ -1,0 +1,52 @@
+{
+  "train_rescheduling_events": [
+    {
+      "reschedule_id": "RESCHED_2026_001",
+      "train_number": "12105",
+      "original_departure_time": "2026-09-12 23:25:51",
+      "rescheduled_departure_time": "2026-09-13 00:19:51",
+      "delay_offset_minutes": 54,
+      "cause_category": "POWER_BLOCK_MAINTENANCE",
+      "reschedule_reason": "OHE Power block applied for contact wire replacement between Sindi & Wardha",
+      "regulation_station": "Sindi (SNI)",
+      "action_type": "REGULATED",
+      "created_at": "2026-09-12 22:25:51"
+    },
+    {
+      "reschedule_id": "RESCHED_2026_002",
+      "train_number": "12833",
+      "original_departure_time": "2026-09-13 00:25:51",
+      "rescheduled_departure_time": "2026-09-13 01:20:51",
+      "delay_offset_minutes": 55,
+      "cause_category": "TRACK_MAINTENANCE",
+      "reschedule_reason": "TMS Deep screening block extended by 45 mins at KM 814",
+      "regulation_station": "Ajni (AJNI)",
+      "action_type": "RETIMED",
+      "created_at": "2026-09-12 22:25:51"
+    },
+    {
+      "reschedule_id": "RESCHED_2026_003",
+      "train_number": "12656",
+      "original_departure_time": "2026-09-13 01:25:51",
+      "rescheduled_departure_time": "2026-09-13 02:33:51",
+      "delay_offset_minutes": 68,
+      "cause_category": "SIGNAL_FAILURE",
+      "reschedule_reason": "Axle counter failure at Wardha North Cabin",
+      "regulation_station": "Wardha (WR)",
+      "action_type": "REGULATED",
+      "created_at": "2026-09-12 22:25:51"
+    },
+    {
+      "reschedule_id": "RESCHED_2026_004",
+      "train_number": "18030",
+      "original_departure_time": "2026-09-13 02:25:51",
+      "rescheduled_departure_time": "2026-09-13 03:29:51",
+      "delay_offset_minutes": 64,
+      "cause_category": "POWER_BLOCK_MAINTENANCE",
+      "reschedule_reason": "Integrated Multi-Dept Power & Track block on UP Line",
+      "regulation_station": "Nagpur (NGP)",
+      "action_type": "DIVERTED",
+      "created_at": "2026-09-12 22:25:51"
+    }
+  ]
+}

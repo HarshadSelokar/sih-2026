@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TDMS_BlockPlanning_Payload",
+  "description": "Traction Distribution Management System (TDMS) JSON Data Interface for SIH 26027 AI Automatic Block Planning System",
+  "type": "object",
+  "properties": {
+    "system_id": { "type": "string", "example": "TDMS_CR_NGP" },
+    "timestamp": { "type": "string", "format": "date-time" },
+    "section_code": { "type": "string", "example": "SEC_NGP_WR_UP" },
+    "defects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "defect_id": { "type": "string", "example": "DEF_TRD_2026_004" },
+          "mast_id": { "type": "string", "example": "MAST_SEC_NGP_WR_UP_795_14" },
+          "location_km": { "type": "number", "example": 795.105 },
+          "subsystem": { "type": "string", "enum": ["OHE", "PSI", "SCADA", "BONDING", "TOWER_WAGON"] },
+          "defect_category": { "type": "string", "example": "Contact Wire Wear > 20%" },
+          "severity": { "type": "string", "enum": ["CRITICAL", "HIGH", "MEDIUM", "LOW"] },
+          "estimated_work_duration_minutes": { "type": "integer", "example": 180 },
+          "power_block_required": { "type": "boolean", "example": true },
+          "traffic_block_required": { "type": "boolean", "example": true },
+          "tower_wagon_required": { "type": "boolean", "example": true }
+        },
+        "required": ["defect_id", "subsystem", "defect_category", "severity", "estimated_work_duration_minutes", "power_block_required"]
+      }
+    },
+    "overdue_maintenance": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "schedule_id": { "type": "string", "example": "SCH_TRD_2026_002" },
+          "asset_type": { "type": "string", "enum": ["OHE_SPAN", "TSS_TRANSFORMER", "CIRCUIT_BREAKER", "ISOLATOR", "AT_TRANSFORMER", "NEUTRAL_SECTION"] },
+          "maintenance_type": { "type": "string", "enum": ["MONTHLY", "QUARTERLY", "HALF_YEARLY", "ANNUAL", "IOH", "POH"] },
+          "due_date": { "type": "string", "format": "date" },
+          "overdue_days": { "type": "integer", "example": 14 },
+          "urgency_score": { "type": "number", "example": 8.5 },
+          "estimated_duration_minutes": { "type": "integer", "example": 240 }
+        },
+        "required": ["schedule_id", "asset_type", "maintenance_type", "due_date", "overdue_days", "urgency_score"]
+      }
+    },
+    "block_requests": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "block_request_id": { "type": "string", "example": "PBR_TRD_2026_001" },
+          "start_km": { "type": "number", "example": 792.5 },
+          "end_km": { "type": "number", "example": 798.0 },
+          "track_line": { "type": "string", "enum": ["UP", "DOWN", "BOTH", "YARD"] },
+          "block_type": { "type": "string", "enum": ["POWER_BLOCK", "TRAFFIC_AND_POWER_BLOCK", "SHADOW_BLOCK", "EMERGENCY_POWER_BLOCK"] },
+          "requested_duration_minutes": { "type": "integer", "example": 150 },
+          "priority_level": { "type": "integer", "minimum": 1, "maximum": 5 },
+          "associated_defect_ids": { "type": "array", "items": { "type": "string" } },
+          "associated_schedule_ids": { "type": "array", "items": { "type": "string" } }
+        },
+        "required": ["block_request_id", "start_km", "end_km", "track_line", "block_type", "requested_duration_minutes", "priority_level"]
+      }
+    }
+  },
+  "required": ["system_id", "timestamp", "section_code", "defects", "overdue_maintenance", "block_requests"]
+}

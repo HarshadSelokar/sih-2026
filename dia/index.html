@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RailBlock AI — SIH 2026 Problem 26027 System Architecture Diagram</title>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 32px;
+      background-color: #ffffff;
+      color: #0f172a;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    h1 {
+      margin-bottom: 6px;
+      color: #1e293b;
+      font-size: 24px;
+      font-weight: 700;
+      text-align: center;
+    }
+    .subtitle {
+      color: #64748b;
+      margin-bottom: 24px;
+      font-size: 14px;
+      text-align: center;
+    }
+    .diagram-container {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+      border: 1px solid #cbd5e1;
+      overflow-x: auto;
+      max-width: 100%;
+    }
+    .mermaid {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>RailBlock AI — System Architecture Diagram</h1>
+  <div class="subtitle">SIH 2026 Problem Statement 26027 | Intelligent Railway Block Planning & Optimization</div>
+  <div class="diagram-container">
+    <pre class="mermaid">
+flowchart LR
+  subgraph Zone1 [ZONE 1 — Users & External Systems]
+    UI_Planners(Control Office / User Planners):::user -- Authenticated HTTPS Requests --> API[API Gateway / Auth<br/>Request Routing • Auth]
+    TMS((TMS)):::ext -- Maintenance / Defect Data --> Adapters
+    SMMS((SMMS)):::ext -- S&T Maintenance Data --> Adapters
+    TDMS((TDMS)):::ext -- TRD Maintenance Data --> Adapters
+    COA((COA)):::ext -- Operational / Train Data --> Adapters
+    BDMS((BDMS)):::ext -- Block Request / Availability Data --> Adapters
+    Files((CSV/JSON Input)):::ext -- Synthetic / Prototype Data --> Adapters
+  end
+
+  subgraph Zone3 [ZONE 3 — Integration & Application]
+    API -- HTTPS Requests --> DomainServices[(Domain Services:<br/>Maintenance • Operations<br/>Planning • Block Management • Execution)]
+    Adapters[/Source Adapters/] -- Raw Source Records --> Validator[/Data Validator/]
+    Validator -- Validated Records --> Normalizer[/Data Normalizer/]
+    Normalizer -- Canonical Railway Data --> CanonicalDB[(Canonical Railway Data DB<br/>Unified Planning Data)]
+    CanonicalDB --> DomainServices
+    DomainServices --> AuthRBAC[Auth RBAC]
+    DomainServices --> Audit[Audit]
+    DomainServices --> Notification[Notification]
+  end
+
+  subgraph Zone2 [ZONE 2 — Web Planning & PWA]
+    WebUI[Web Planning & PWA] --- Dashboard[Dashboard]
+    WebUI --- PlannerGrid[Planner Workspace]
+    WebUI --- ConflictScreen[Conflict Center]
+    WebUI --- WhatIf["What-If Simulator"]
+    WebUI --- Approval[Approval Screen]
+    DomainServices -.-> WebUI
+  end
+
+  subgraph Zone4 [ZONE 4 — Data, AI & Optimization: The Brain]
+    CanonicalDB -- Unified Planning Data --> FeatEng[Feature Engineering<br/>Criticality • Urgency • Overdue]
+    FeatEng -- Derived Planning Features --> PriorityAI["AI Priority / Risk Engine"]
+    PriorityAI -- Priority Scores + Ranked Tasks --> CompEngine[Compatibility Engine]
+    CompEngine -- Compatible Task Groups --> BlockGen[Candidate Block Generator]
+    
+    OpContext[Operational Context<br/>Train Windows • Corridor Availability] -- Available Operational Windows --> BlockGen
+    ResAvail[Resource Availability<br/>Crew • Equipment] -- Available Resources --> OptEngine
+
+    BlockGen -- Candidate Blocks + Task Assignments --> OptEngine["Optimization Solver<br/>(CP-SAT / MILP)"]
+    OptEngine -- Proposed Block Plan --> ConstraintVal["Constraint Validation<br/>(Hard + Soft Constraints)"]
+    ConstraintVal -- Validated Schedule --> FeasiblePlan[Feasible Plan]
+    FeasiblePlan --> ExplainEngine["Explainability + KPI Engine<br/>Rationale • KPIs • Impact"]
+  end
+
+  subgraph Zone5 [ZONE 5 — Approval, Execution & Feedback]
+    ConstraintVal -- Conflicts / Violations --> ConflictCenter[Conflict Center]
+    ExplainEngine -- Recommended Plan + Rationale + KPIs --> WebUI
+    ConflictCenter -- Conflicts / Violations --> Review(Human Planner Review)
+    Review -->|Accept| Approved[Approved Plan]
+    Review -->|Modify / Reject| Loop["Re-plan Loop"]
+    Loop -- Updated Tasks / Windows / Constraints --> OptEngine
+    Approved -- Approved Block Schedule --> ExecutionTracking[Execution Tracking]
+    ExecutionTracking -- Actual Execution Data --> HistoryDB[(Execution History DB)]
+    HistoryDB -.->|Execution Outcomes / Historical Data| CanonicalDB
+  end
+
+  classDef user fill:#b4c6e7,stroke:#2b4c7e,stroke-width:1.5px,color:#000;
+  classDef ext fill:#fff,stroke:#000,stroke-width:1.5px,color:#000;
+  
+  style Zone1 fill:#fef9e7,stroke:#f1c40f,stroke-width:2px,color:#000;
+  style Zone3 fill:#ebf5fb,stroke:#3498db,stroke-width:2px,color:#000;
+  style Zone2 fill:#e8f8f5,stroke:#2ecc71,stroke-width:2px,color:#000;
+  style Zone4 fill:#f4ecf7,stroke:#9b59b6,stroke-width:2px,color:#000;
+  style Zone5 fill:#fadbd8,stroke:#e74c3c,stroke-width:2px,color:#000;
+    </pre>
+  </div>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: 'default',
+      flowchart: {
+        useMaxWidth: false,
+        htmlLabels: true
+      }
+    });
+  </script>
+</body>
+</html>
+

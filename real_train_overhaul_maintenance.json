@@ -1,0 +1,62 @@
+[
+  {
+    "rake_id": "RAKE_LHB_12105_01",
+    "train_number": "12105",
+    "train_name": "Vidarbha Express",
+    "stock_type": "LHB Coaches (24 Coaches)",
+    "depot_base": "Ajni Coaching Depot (Nagpur)",
+    "workshop": "Central Railway Workshop Matunga (MTN)",
+    "last_poh_date": "2024-03-15",
+    "next_poh_due_date": "2025-09-15",
+    "last_ioh_date": "2025-01-10",
+    "next_ioh_due_date": "2025-10-10",
+    "wheel_profiling_status": "DUE_IN_30_DAYS",
+    "bogie_overhaul_status": "OK",
+    "air_brake_testing_status": "COMPLIED"
+  },
+  {
+    "rake_id": "RAKE_ICF_18030_02",
+    "train_number": "18030",
+    "train_name": "Shalimar - LTT Express",
+    "stock_type": "ICF Coaches (22 Coaches)",
+    "depot_base": "Shalimar Coaching Depot (SER)",
+    "workshop": "Kharagpur Workshop (KGP)",
+    "last_poh_date": "2023-11-20",
+    "next_poh_due_date": "2024-11-20",
+    "last_ioh_date": "2024-05-15",
+    "next_ioh_due_date": "2024-11-15",
+    "wheel_profiling_status": "OVERDUE",
+    "bogie_overhaul_status": "ATTENTION_REQUIRED",
+    "air_brake_testing_status": "ATTENTION_REQUIRED"
+  },
+  {
+    "rake_id": "RAKE_VB_20912_01",
+    "train_number": "20912",
+    "train_name": "Vande Bharat Express",
+    "stock_type": "Trainset 16 Coaches (Vande Bharat 2.0)",
+    "depot_base": "Nagpur VB Coaching Depot",
+    "workshop": "Integral Coach Factory (ICF) Chennai",
+    "last_poh_date": "2025-01-05",
+    "next_poh_due_date": "2028-01-05",
+    "last_ioh_date": "2025-07-05",
+    "next_ioh_due_date": "2026-01-05",
+    "wheel_profiling_status": "OK",
+    "bogie_overhaul_status": "OK",
+    "air_brake_testing_status": "COMPLIED"
+  },
+  {
+    "loco_id": "LOCO_WAP7_30452",
+    "train_number": "12656",
+    "train_name": "Navjeevan Express Loco",
+    "stock_type": "3-Phase AC Electric Loco WAP-7 (6000 HP)",
+    "depot_base": "Electric Loco Shed Ajni (ELS/AJNI)",
+    "workshop": "Dahod Workshop / CLW",
+    "last_poh_date": "2022-08-10",
+    "next_poh_due_date": "2028-08-10",
+    "last_ioh_date": "2024-02-10",
+    "next_ioh_due_date": "2027-02-10",
+    "wheel_profiling_status": "OK",
+    "bogie_overhaul_status": "OK",
+    "air_brake_testing_status": "COMPLIED"
+  }
+]

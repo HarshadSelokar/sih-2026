@@ -1,0 +1,105 @@
+{
+  "track_corridor_assets": [
+    {
+      "track_id": "TRK_NGP_WR_UP_01",
+      "section_id": "SEC_NGP_WR_UP",
+      "track_line": "UP",
+      "start_km": 785.0,
+      "end_km": 810.0,
+      "rail_weight_kg": "60kg 90UTS",
+      "sleeper_density": 1660,
+      "ballast_cushion_mm": 350,
+      "tgi_score": 82.5,
+      "last_tamping_date": "2025-11-10",
+      "last_deep_screening_date": "2024-06-15"
+    },
+    {
+      "track_id": "TRK_NGP_WR_UP_02",
+      "section_id": "SEC_NGP_WR_UP",
+      "track_line": "UP",
+      "start_km": 810.0,
+      "end_km": 835.0,
+      "rail_weight_kg": "60kg 90UTS",
+      "sleeper_density": 1660,
+      "ballast_cushion_mm": 300,
+      "tgi_score": 68.0,
+      "last_tamping_date": "2025-08-20",
+      "last_deep_screening_date": "2023-12-10"
+    },
+    {
+      "track_id": "TRK_NGP_WR_DN_01",
+      "section_id": "SEC_NGP_WR_DN",
+      "track_line": "DOWN",
+      "start_km": 785.0,
+      "end_km": 820.0,
+      "rail_weight_kg": "60kg 90UTS",
+      "sleeper_density": 1660,
+      "ballast_cushion_mm": 350,
+      "tgi_score": 88.0,
+      "last_tamping_date": "2025-12-01",
+      "last_deep_screening_date": "2024-08-01"
+    }
+  ],
+  "tms_track_schedules": [
+    {
+      "track_schedule_id": "TMS_SCH_2026_01",
+      "section_id": "SEC_NGP_WR_UP",
+      "start_km": 812.0,
+      "end_km": 818.5,
+      "maintenance_activity": "BCM Ballast Cleaning & Deep Screening",
+      "track_block_duration_minutes": 240,
+      "required_machinery": "BCM Machine 802 + DGS",
+      "urgency_level": "CRITICAL",
+      "planned_date": "2026-09-14",
+      "status": "PLANNED"
+    },
+    {
+      "track_schedule_id": "TMS_SCH_2026_02",
+      "section_id": "SEC_NGP_WR_UP",
+      "start_km": 825.0,
+      "end_km": 830.0,
+      "maintenance_activity": "Track Tamping with CSM Machine",
+      "track_block_duration_minutes": 180,
+      "required_machinery": "CSM Tamper 09-32",
+      "urgency_level": "HIGH",
+      "planned_date": "2026-09-13",
+      "status": "REQUESTED"
+    },
+    {
+      "track_schedule_id": "TMS_SCH_2026_03",
+      "section_id": "SEC_NGP_WR_DN",
+      "start_km": 795.0,
+      "end_km": 802.0,
+      "maintenance_activity": "Through Rail Renewal (TRR)",
+      "track_block_duration_minutes": 300,
+      "required_machinery": "TRT Rail Threader Machine",
+      "urgency_level": "MEDIUM",
+      "planned_date": "2026-09-16",
+      "status": "PLANNED"
+    }
+  ],
+  "temporary_speed_restrictions": [
+    {
+      "tsr_id": "TSR_2026_101",
+      "section_id": "SEC_NGP_WR_UP",
+      "start_km": 812.0,
+      "end_km": 814.5,
+      "restricted_speed_kmph": 30,
+      "normal_speed_kmph": 130,
+      "reason": "Deep screening track work in progress",
+      "issued_date": "2026-09-09",
+      "expected_removal_date": "2026-09-17"
+    },
+    {
+      "tsr_id": "TSR_2026_102",
+      "section_id": "SEC_NGP_WR_DN",
+      "start_km": 838.0,
+      "end_km": 840.0,
+      "restricted_speed_kmph": 45,
+      "normal_speed_kmph": 110,
+      "reason": "Bridge approach track consolidation",
+      "issued_date": "2026-09-11",
+      "expected_removal_date": "2026-09-22"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+[
+  {
+    "zone_code": "CR",
+    "zone_name": "Central Railway",
+    "divisions": [
+      "Nagpur (NGP)",
+      "Bhusaval (BSL)",
+      "Mumbai (BB)",
+      "Pune (PA)",
+      "Solapur (SUR)"
+    ],
+    "total_track_km": 4152.8,
+    "overdue_track_renewal_ctr_km": 348.5,
+    "overdue_through_rail_renewal_trr_km": 210.2,
+    "overdue_through_sleeper_renewal_tsr_km": 185.4,
+    "usfd_rail_flaw_defects_logged": 1420,
+    "usfd_weld_flaw_defects_logged": 890,
+    "track_tamping_machine_block_hrs_requested": 12500,
+    "track_tamping_machine_block_hrs_granted": 6125,
+    "bcm_deep_screening_hrs_requested": 4800,
+    "bcm_deep_screening_hrs_granted": 2160,
+    "avg_tgi_track_geometry_index": 71.4,
+    "total_tsr_caution_orders_active": 184
+  },
+  {
+    "zone_code": "WR",
+    "zone_name": "Western Railway",
+    "divisions": [
+      "Mumbai Central (BCT)",
+      "Vadodara (BRC)",
+      "Ahmedabad (ADI)",
+      "Ratlam (RTM)",
+      "Rajkot (RJT)",
+      "Bhavnagar (BVP)"
+    ],
+    "total_track_km": 6480.2,
+    "overdue_track_renewal_ctr_km": 412.0,
+    "overdue_through_rail_renewal_trr_km": 285.6,
+    "overdue_through_sleeper_renewal_tsr_km": 240.1,
+    "usfd_rail_flaw_defects_logged": 1680,
+    "usfd_weld_flaw_defects_logged": 1050,
+    "track_tamping_machine_block_hrs_requested": 15800,
+    "track_tamping_machine_block_hrs_granted": 8216,
+    "bcm_deep_screening_hrs_requested": 5900,
+    "bcm_deep_screening_hrs_granted": 2832,
+    "avg_tgi_track_geometry_index": 74.8,
+    "total_tsr_caution_orders_active": 210
+  },
+  {
+    "zone_code": "NR",
+    "zone_name": "Northern Railway",
+    "divisions": [
+      "Delhi (DLI)",
+      "Ambala (UMB)",
+      "Firozpur (FZR)",
+      "Lucknow (LKO)",
+      "Moradabad (MB)"
+    ],
+    "total_track_km": 7240.5,
+    "overdue_track_renewal_ctr_km": 520.4,
+    "overdue_through_rail_renewal_trr_km": 340.8,
+    "overdue_through_sleeper_renewal_tsr_km": 310.0,
+    "usfd_rail_flaw_defects_logged": 2150,
+    "usfd_weld_flaw_defects_logged": 1340,
+    "track_tamping_machine_block_hrs_requested": 18900,
+    "track_tamping_machine_block_hrs_granted": 8883,
+    "bcm_deep_screening_hrs_requested": 7100,
+    "bcm_deep_screening_hrs_granted": 3053,
+    "avg_tgi_track_geometry_index": 68.2,
+    "total_tsr_caution_orders_active": 295
+  },
+  {
+    "zone_code": "SECR",
+    "zone_name": "South East Central Railway",
+    "divisions": [
+      "Bilaspur (BSP)",
+      "Raipur (R)",
+      "Nagpur SECR (NGP)"
+    ],
+    "total_track_km": 2540.1,
+    "overdue_track_renewal_ctr_km": 290.1,
+    "overdue_through_rail_renewal_trr_km": 195.4,
+    "overdue_through_sleeper_renewal_tsr_km": 142.0,
+    "usfd_rail_flaw_defects_logged": 1120,
+    "usfd_weld_flaw_defects_logged": 780,
+    "track_tamping_machine_block_hrs_requested": 9800,
+    "track_tamping_machine_block_hrs_granted": 4410,
+    "bcm_deep_screening_hrs_requested": 3800,
+    "bcm_deep_screening_hrs_granted": 1596,
+    "avg_tgi_track_geometry_index": 69.5,
+    "total_tsr_caution_orders_active": 140
+  }
+]

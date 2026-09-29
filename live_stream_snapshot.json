@@ -1,0 +1,110 @@
+ {
+  "simulation_timestamp": "2026-09-12 22:26:34",
+  "active_trains_count": 8,
+  "live_trains": [
+    {
+      "train_number": "20912",
+      "train_name": "Nagpur - Bilaspur Vande Bharat Express",
+      "train_type": "VANDE_BHARAT",
+      "section_id": "SEC_NGP_WR_UP",
+      "current_km_location": 808.843,
+      "current_speed_kmph": 130,
+      "delay_minutes": 0,
+      "running_status": "RUNNING_ON_TIME",
+      "occupancy_block_section": "BLK_SEC_NGP_WR_UP_808",
+      "next_signal_aspect": "GREEN",
+      "timestamp": "2026-09-12 22:26:34"
+    },
+    {
+      "train_number": "12105",
+      "train_name": "Vidarbha Superfast Express",
+      "train_type": "SUPERFAST",
+      "section_id": "SEC_NGP_WR_UP",
+      "current_km_location": 842.15,
+      "current_speed_kmph": 100,
+      "delay_minutes": 19,
+      "running_status": "RUNNING_LATE",
+      "occupancy_block_section": "BLK_SEC_NGP_WR_UP_842",
+      "next_signal_aspect": "GREEN",
+      "timestamp": "2026-09-12 22:26:34"
+    },
+    {
+      "train_number": "12833",
+      "train_name": "Howrah - Ahmedabad SF Express",
+      "train_type": "SUPERFAST",
+      "section_id": "SEC_NGP_WR_UP",
+      "current_km_location": 834.363,
+      "current_speed_kmph": 110,
+      "delay_minutes": 8,
+      "running_status": "RUNNING_LATE",
+      "occupancy_block_section": "BLK_SEC_NGP_WR_UP_834",
+      "next_signal_aspect": "GREEN",
+      "timestamp": "2026-09-12 22:26:34"
+    },
+    {
+      "train_number": "12656",
+      "train_name": "Navjeevan Express",
+      "train_type": "SUPERFAST",
+      "section_id": "SEC_NGP_WR_UP",
+      "current_km_location": 852.213,
+      "current_speed_kmph": 60,
+      "delay_minutes": 4,
+      "running_status": "RUNNING_LATE",
+      "occupancy_block_section": "BLK_SEC_NGP_WR_UP_852",
+      "next_signal_aspect": "DOUBLE_YELLOW",
+      "timestamp": "2026-09-12 22:26:34"
+    },
+    {
+      "train_number": "18030",
+      "train_name": "Shalitmar - Mumbai LTT Express",
+      "train_type": "EXPRESS",
+      "section_id": "SEC_NGP_WR_DN",
+      "current_km_location": 796.188,
+      "current_speed_kmph": 60,
+      "delay_minutes": 16,
+      "running_status": "RUNNING_LATE",
+      "occupancy_block_section": "BLK_SEC_NGP_WR_DN_796",
+      "next_signal_aspect": "DOUBLE_YELLOW",
+      "timestamp": "2026-09-12 22:26:34"
+    },
+    {
+      "train_number": "01124",
+      "train_name": "Nagpur - Wardha MEMU Passenger",
+      "train_type": "PASSENGER",
+      "section_id": "SEC_NGP_WR_UP",
+      "current_km_location": 804.19,
+      "current_speed_kmph": 60,
+      "delay_minutes": 15,
+      "running_status": "RUNNING_LATE",
+      "occupancy_block_section": "BLK_SEC_NGP_WR_UP_804",
+      "next_signal_aspect": "DOUBLE_YELLOW",
+      "timestamp": "2026-09-12 22:26:34"
+    },
+    {
+      "train_number": "GOODS_CONT_901",
+      "train_name": "JNPT Container Freight (BTPN)",
+      "train_type": "FREIGHT_CONTAINER",
+      "section_id": "SEC_NGP_WR_UP",
+      "current_km_location": 797.769,
+      "current_speed_kmph": 75,
+      "delay_minutes": 4,
+      "running_status": "RUNNING_LATE",
+      "occupancy_block_section": "BLK_SEC_NGP_WR_UP_797",
+      "next_signal_aspect": "DOUBLE_YELLOW",
+      "timestamp": "2026-09-12 22:26:34"
+    },
+    {
+      "train_number": "GOODS_COAL_405",
+      "train_name": "WCL Coal Rake Freight (BOXN)",
+      "train_type": "FREIGHT_COAL",
+      "section_id": "SEC_NGP_WR_UP",
+      "current_km_location": 833.813,
+      "current_speed_kmph": 75,
+      "delay_minutes": 5,
+      "running_status": "RUNNING_LATE",
+      "occupancy_block_section": "BLK_SEC_NGP_WR_UP_833",
+      "next_signal_aspect": "DOUBLE_YELLOW",
+      "timestamp": "2026-09-12 22:26:34"
+    }
+  ]
+}
